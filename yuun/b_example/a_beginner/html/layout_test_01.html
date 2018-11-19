@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <mata http-equiv="X-UA-compatible" content="IE=edge" />
+	<title>layout</title>
+	<style>
+  	/* reset.css */
+     html,body{margin: 0; width: 100%; height: 100%;}
+     h1,h2,h3,h4,h5,h6,ol,li,ul,dd,dt,dl,div,p{margin:0; padding: 0;}
+     ol,ul,li{list-style: none;}
+    /* common.css */
+     .hidden {width: 0; height: 0; overflow: hidden;}
+    /* design.css */
+    
+   #wrap {margin: auto; width: 960px; height: auto; background-color: #000;}
+
+   #gnbBox {width: 960px; height: 112px; background-color: #8f8f8f;}
+     #gnbBox_01 {padding-top: 9px; box-sizing: border-box; width: 960px; height: 60px; background-color: #777;}
+       #gnbBox_logo {margin: auto; width: 160px; height: 42px; background-color: #bbb;}
+     #gnbBox_02 {width: 960px; height: 52px; background-color: #8f8f8f;}
+       #gnbBox_menu {margin: auto; width: 764px; height: 52px; background-color: #000;}
+         #gnbBox_menu_01 {float: left; width: 109.1528px; height: 52px; background-color: #aaa;}
+         #gnbBox_menu_02 {float: left; width: 109.1528px; height: 52px; background-color: #bbb;}
+         #gnbBox_menu_03 {float: left; width: 109.1428px; height: 52px; background-color: #aaa;}
+         #gnbBox_menu_04 {float: left; width: 109.1428px; height: 52px; background-color: #bbb;}
+         #gnbBox_menu_05 {float: left; width: 109.1428px; height: 52px; background-color: #aaa;}
+         #gnbBox_menu_06 {float: left; width: 109.1428px; height: 52px; background-color: #bbb;}
+         #gnbBox_menu_07 {float: left; width: 109.1428px; height: 52px; background-color: #aaa;}
+
+   #adBox {width: 960px; height: 531px; background-color: #cecece;}
+
+   #brandBox {padding-top: 44px; padding-left: 32px; box-sizing: border-box; width: 960px; height: 553px; background-color: #eee;}
+     #brand_text {margin: auto; width: 184px; height: 33px; background-color: #aaa;}
+     #brandBox_01 {margin-top: 35px; width: 900px; height: 90px;background-color: #ccc;}
+       #brandBox_01_01 {float: left; width: 150px; height: 90px; background-color: #bbb;}
+       #brandBox_01_02 {float: left; width: 150px; height: 90px; background-color: #aaa;}
+       #brandBox_01_03 {float: left; width: 150px; height: 90px; background-color: #bbb;}
+       #brandBox_01_04 {float: left; width: 150px; height: 90px; background-color: #aaa;}
+       #brandBox_01_05 {float: left; width: 150px; height: 90px; background-color: #bbb;}
+       #brandBox_01_06 {float: left; width: 150px; height: 90px; background-color: #aaa;}
+   
+     #brandBox_02 {margin-top: 50px; width: 900px; height: 270px; background-color: #fff;}
+       #beandBox_02_01 {float: left; width: 300px; height: 270px; background-color: #666;}
+         #beand_img_01 {float: left; width: 300px; height: 190px; background-color: #666;}
+         #beand_text_01 {float: left; width: 300px; height: 80px; background-color: #555;}
+       #beandBox_02_02 {float: left; width: 300px; height: 270px; background-color: #aaa;}
+         #beand_img_02 {float: left; width: 300px; height: 190px; background-color: #aaa;}
+         #beand_text_02 {float: left; width: 300px; height: 80px; background-color: #bbb;}
+       #beandBox_02_03 {float: left; width: 300px; height: 270px; background-color: #666;}
+         #beand_img_03{float: left; width: 300px; height: 190px; background-color: #666;}
+         #beand_text_03 {float: left; width: 300px; height: 80px; background-color: #555;}
+
+	 #eventBox {padding-top: 73px;box-sizing: border-box; width: 960px; height: 705px; background-color: #555;}
+     #eventBox_text {margin: auto; width: 174px; height: 32px; background-color: #ccc;}
+     #eventBox_01 {padding-top: 36px; padding-left: 54px; box-sizing: border-box; margin-top: 38px; float: left; width: 480px; height: 562px; background-color: #aaa;}
+       #event_img_01 {width: 390px; height: 423px; background-color: #eee;}
+       #event_text_01 {width: 390px; height: 64px; background-color: #666;}
+     #eventBox_02 {margin-top: 38px; padding-top: 23px; box-sizing: border-box; float: right; width: 464px; height: 562px; background-color: #aaa;}
+       #eventBox_02_01 {padding-left: 14px; padding-top: 15px; box-sizing: border-box; width: 464px; height: 171px; background-color: #bbb;}
+         #eventBox_img_02 {width: 390px; height: 142px; background-color: #666;}
+       #eventBox_02_02 {padding-left: 14px; padding-top: 15px; box-sizing: border-box; width: 464px; height: 171px; background-color: #aaa;}
+         #eventBox_img_03 {width: 390px; height: 142px; background-color: #666;}
+       #eventBox_02_03 {padding-left: 14px; padding-top: 15px; box-sizing: border-box; width: 464px; height: 171px; background-color: #bbb;}
+         #eventBox_img_04 {width: 390px; height: 142px; background-color: #666;}
+
+   #stortBox {padding-left: 135px; padding-top: 75px; box-sizing: border-box; width: 960px; height: 234px; background-color: #ccc;}
+     #stort_text {float: left; width: 172px; height: 49px; background-color: #6e6e6e;}
+     #stortBox_01 {padding-top: 3px; box-sizing: border-box; margin-left: 69px; float: left; width: 505px; height: 49px; background-color: #666;}
+     #stort_sc {margin: auto; width: 499px; height: 43px;background-color: #aaa;}
+     #stort_sc_Sb {margin-right: 136px; margin-top: 23px; float: right; width: 80px; height: 11px; background-color: #666;}
+
+   #adSbBox {padding-top: 62px; padding-left: 74px; box-sizing: border-box; width: 960px; height: 624px; background-color: #bbb;}
+     #adSbBox_01 {width: 818px; height: 360px; background-color: #bbb;}
+       #adSbBox_01_01 {margin-right: 22px; float: left; width: 258px; height: 360px; background-color: #aaa;}
+         #adSb_text_01 {width: 258px; height: 46px; background-color: #ccc;}
+         #adSb_img_01 {width: 258px; height: 314px; background-color: #666;}
+       #adSbBox_01_02 {margin-right: 22px; float: left; width: 258px; height: 360px; background-color: #aaa;}
+         #adSb_text_02 {width: 258px; height: 46px; background-color: #ccc;}
+         #adSb_img_02 {width: 258px; height: 314px; background-color: #666;}
+       #adSbBox_01_03 {float: left; width: 258px; height: 360px; background-color: #aaa;}
+         #adSb_text_03 {width: 258px; height: 46px; background-color: #ccc;}
+         #adSb_img_03 {width: 258px; height: 314px; background-color: #666;}
+     #adSbBox_02 {padding-top: 22px; padding-right: 38px; box-sizing: border-box; margin-top: 22px; width: 818px; height: 90px; background-color: #a6a6a6;}
+       #adSb_bt {float: right; width: 230px; height: 45px; background-color: #ccc;}
+
+   #snsBox {padding-top: 75px; box-sizing: border-box; width: 960px; height: 695px; background-color: #ddd;}
+     #sns_text {margin: auto; width: 133px; height: 31px; background-color: #aaa;}
+     #snsBox_01 {margin-top: 36px; width: 960px; height: 464px; background-color: #ddd}
+       #sns_img_01 {margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_02 {margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_03 {margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_04 {float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_05 {margin-top: 14px; margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_06 {margin-top: 14px; margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_07 {margin-top: 14px; margin-right: 20px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+       #sns_img_08 {margin-top: 14px; float: left; width: 225px; height: 225px; background-color: #aaa;}
+     #snsBox_02 {margin-left: 436px; margin-top: 17px; width: 90px; height: 37px; background-color: #ddd;}
+       #sns_bt_01 {float: left; width: 37px; height: 37px; background-color: #aaa;}
+       #sns_bt_02 {float: right; width: 37px; height: 37px; background-color: #aaa;}
+  
+   #kgBox {width: 960px; height: 232px; background-color: #aaa;}
+     #kgBox_01 {margin: auto; width: 785px; height: 232px; background-color: #fff;}
+       #kg_01{float: left; width: 130.8px; height: 232px; background-color: #bbb;}
+       #kg_02{float: left; width: 130.8px; height: 232px; background-color: #ccc;}
+       #kg_03{float: left; width: 130.8px; height: 232px; background-color: #bbb;}
+       #kg_04{float: left; width: 130.8px; height: 232px; background-color: #ccc;}
+       #kg_05{float: left; width: 130.8px; height: 232px; background-color: #bbb;}
+       #kg_06{float: left; width: 130.8px; height: 232px; background-color: #ccc;}
+
+   #kgSbBox {width: 960px; height: 210px; background-color: #a6a6a6;}
+     #kgSb_bar {width: 960px; height: 37px; background-color: #444;}
+     #kgSbBox_01 {margin:auto; width: 766px; height: 174px; background-color: #fff;}
+       #kgSb_01 {float: left; width: 85.121px; height: 100%; background-color: #555;}
+       #kgSb_02 {float: left; width: 85.111px; height: 100%; background-color: #666;}
+       #kgSb_03 {float: left; width: 85.111px; height: 100%; background-color: #555;}
+       #kgSb_04 {float: left; width: 85.111px; height: 100%; background-color: #666;}
+       #kgSb_05 {float: left; width: 85.111px; height: 100%; background-color: #555;}
+       #kgSb_06 {float: left; width: 85.111px; height: 100%; background-color: #666;}
+       #kgSb_07 {float: left; width: 85.111px; height: 100%; background-color: #555;}
+       #kgSb_08 {float: left; width: 85.111px; height: 100%; background-color: #666;}
+       #kgSb_09 {float: left; width: 85.111px; height: 100%; background-color: #555;}
+
+  #footBox {width: 960px; height: 204px; background-color: #222;}
+    #foot_menu {width: 960px; height: 41px; background-color: #000;}
+      #foot_menu_01 {float: left; width: 106px; height: 41px; background-color: #444;}
+      #foot_menu_02 {float: left; width: 70px; height: 41px; background-color: #555;}
+      #foot_menu_03 {float: left; width: 117px; height: 41px; background-color: #444;}
+      #foot_menu_04 {float: left; width: 115px; height: 41px; background-color: #555;}
+      #foot_menu_05 {float: left; width: 88px; height: 41px; background-color: #444;}
+    #foot_box_00 {width: 766px; height: 114px; background-color: #222;}
+    #foot_box_01 {float: left; margin-top:12px; width: 285px; height: 114px; background-color: #333;}
+    #foot_box_02 {float: right; margin-top: 22px; width: 281px; height: 104px; background-color: #333;}
+   
+
+  </style>
+</head>
+<body>
+ <div id="wrap">
+
+   <div id="gnbBox">
+     <div id="gnbBox_01">
+       <div id="gnbBox_logo"></div>
+     </div>
+     <div id="gnbBox_02">
+       <div id="gnbBox_menu">
+         <div id="gnbBox_menu_01"></div>
+         <div id="gnbBox_menu_02"></div>
+         <div id="gnbBox_menu_03"></div>
+         <div id="gnbBox_menu_04"></div>
+         <div id="gnbBox_menu_05"></div>
+         <div id="gnbBox_menu_06"></div>
+         <div id="gnbBox_menu_07"></div>
+       </div>
+     </div>
+   </div>
+
+   <div id="adBox"></div>
+
+   <div id="brandBox">
+     <div id="brand_text"></div>
+     <div id="brandBox_01">
+       <div id="brandBox_01_01"></div>
+       <div id="brandBox_01_02"></div>
+       <div id="brandBox_01_03"></div>
+       <div id="brandBox_01_04"></div>
+       <div id="brandBox_01_05"></div>
+       <div id="brandBox_01_06"></div>
+     </div>
+     <div id="brandBox_02">
+       <div id="beandBox_02_01">
+         <div id="beand_img_01"></div>
+         <div id="beand_text_01"></div>
+       </div>
+       <div id="beandBox_02_02">
+         <div id="beand_img_02"></div>
+         <div id="beand_text_02"></div>
+       </div>
+       <div id="beandBox_02_03">
+         <div id="beand_img_03"></div>
+         <div id="beand_text_03"></div>
+       </div>
+     </div>
+   </div>
+
+   <div id="eventBox">
+     <div id="eventBox_text"></div>
+     <div id="eventBox_01">
+       <div id="event_img_01"></div>
+       <div id="event_text_01"></div>
+     </div>
+     <div id="eventBox_02">
+       <div id="eventBox_02_01">
+         <div id="eventBox_img_02"></div>  
+       </div>
+       <div id="eventBox_02_02">
+         <div id="eventBox_img_03"></div>
+       </div>
+       <div id="eventBox_02_03">
+         <div id="eventBox_img_04"></div>
+       </div>
+     </div>
+   </div>
+
+   <div id="stortBox">
+     <div id="stort_text"></div>
+     <div id="stortBox_01">
+       <div id="stort_sc"></div>
+     </div>
+     <div id="stort_sc_Sb"></div>  
+   </div>
+
+   <div id="adSbBox">
+     <div id="adSbBox_01">
+       <div id="adSbBox_01_01">
+         <div id="adSb_text_01"></div>
+         <div id="adSb_img_01"></div>
+       </div>
+       <div id="adSbBox_01_02">
+         <div id="adSb_text_02"></div>
+         <div id="adSb_img_02"></div>
+       </div>
+       <div id="adSbBox_01_03">
+         <div id="adSb_text_03"></div>
+         <div id="adSb_img_03"></div>
+       </div>
+     </div>
+       <div id="adSbBox_02">
+         <div id="adSb_bt"></div>
+       </div>
+   </div>
+
+   <div id="snsBox">
+     <div id="sns_text"></div>
+     <div id="snsBox_01">
+       <div id="sns_img_01"></div>
+       <div id="sns_img_02"></div>
+       <div id="sns_img_03"></div>
+       <div id="sns_img_04"></div>
+       <div id="sns_img_05"></div>
+       <div id="sns_img_06"></div>
+       <div id="sns_img_07"></div>
+       <div id="sns_img_08"></div>
+     </div>
+     <div id="snsBox_02">
+       <div id="sns_bt_01"></div>
+       <div id="sns_bt_02"></div>
+     </div>
+   </div>
+
+   <div id="kgBox">
+     <div id="kgBox_01">
+       <div id="kg_01"></div>
+       <div id="kg_02"></div>
+       <div id="kg_03"></div>
+       <div id="kg_04"></div>
+       <div id="kg_05"></div>
+       <div id="kg_06"></div>
+     </div>
+   </div>
+
+   <div id="kgSbBox">
+     <div id="kgSb_bar"></div>
+     <div id="kgSbBox_01">
+       <div id="kgSb_01"></div>
+       <div id="kgSb_02"></div>
+       <div id="kgSb_03"></div>
+       <div id="kgSb_04"></div>
+       <div id="kgSb_05"></div>
+       <div id="kgSb_06"></div>
+       <div id="kgSb_07"></div>
+       <div id="kgSb_08"></div>
+       <div id="kgSb_09"></div>
+     </div>
+   </div>
+   <footer id="footBox">
+     <div id="foot_menu">
+       <div id=foot_menu_01></div>
+       <div id=foot_menu_02></div>
+       <div id=foot_menu_03></div>
+       <div id=foot_menu_04></div>
+       <div id=foot_menu_05></div>
+     </div>
+     <div id="foot_box_00">
+     <div id="foot_box_01"></div>
+     <div id="foot_box_02"></div>
+     </div>
+   </footer>
+
+ </div>
+</body>
+</html>
+

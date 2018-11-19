@@ -1,0 +1,74 @@
+/* rwd_03.css */
+
+
+#wrap {width: auto; height: auto; background-color: #fff;}
+
+#headBox {width: 100%; height: 60px; background-color: #666;}
+	#gnb{width: 126px; height: 30px; background-color: #bbb; float: left;}
+	#unb{width: 94px; height: 38px; float: right;}
+		#unb_01{width: 36px; height: 38px; background-color: #ddd; float: left;}
+		#unb_02{width: 45px; height: 38px; background-color: #eee; float: right;}
+
+#adBox {width: 100%; height: 660px; background-color: #ba7; }
+
+#conBox {padding-top: 25px; padding-left: 25px; box-sizing: border-box; width: 100%; height: 720px; background-color: #577;}
+	#content {width: 190px; height: 156px; background-color: #3a8;}
+ 
+#newsBox {width: 100%; height: 720px; background-color: #97e;}
+
+#footBox {width: 100%; height: 60px; background-color: #666;} 
+
+/* mobile -------------------------------------------- */
+@media screen and (max-width: 480px) {
+	#wrap{width: 100%;background-color: #2e3192; color: #fff;}
+	#headBox{position: relative;}
+	#gnb{position:absolute;  left: 11px; top:11px;}
+	#unb{position:absolute; right: 21px; top:11px;}
+
+		ul>li{display: none;}
+
+	
+
+	
+
+
+} /* mobile end */
+
+/* tablet -------------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+	#wrap{height: 500px; background-color: #c30; color:#fc0;}
+	#headBox{position: relative;}
+	#gnb{position:absolute;  left: 11px; top:11px;}
+
+	#adBox{height: 390px;}
+
+			ul{width: 100%; height: 100%;}
+		ul>li{float: left; width: 50%; height: 100%;}
+		.news_01{background-color: #957de9;}
+		.news_02{background-color: #95abe9;}
+		.news_03{display: none;}
+
+
+} /* tablet ------------------------------------------ */
+
+/* pc ------------------------------------------------ */
+@media screen and (min-width:1025px) {
+	#wrap{background-color: #fff; color: #fa0;}
+	#headBox{position: relative; width: 100%;}
+	#gnb{position:absolute; width: 250px; height: 40px; left: 140px; top:11px;}
+	#unb{position:absolute; width: 500px; height: 30px; right: 140px; top:11px;}
+		#unb_01{width: 50px; height: 30px;}
+		#unb_02{width: 430px; height: 30px;}
+
+	#adBox{height: 390px;}
+
+	#conBox{margin: auto; width: 80%}
+
+	#newsBox {margin: auto; width: 80%;}
+		ul{width: 100%; height: 100%;}
+		ul>li{float: left; width: 33.33%; height: 100%;}
+		.news_01{background-color: #957de9;}
+		.news_02{background-color: #95abe9;}
+		.news_03{width: 33.34%; background-color: #95d2e9;}
+
+} /*pc end */

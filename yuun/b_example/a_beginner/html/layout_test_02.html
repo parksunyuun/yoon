@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <mata http-equiv="X-UA-compatible" content="IE=edge" />
+	<title>layout</title>
+	<style>
+  	/* reset.css */
+     html,body{margin: 0; width: 100%; height: 100%;}
+     h1,h2,h3,h4,h5,h6,ol,li,ul,dd,dt,dl,div,p{margin:0; padding: 0;}
+     ol,ul,li{list-style: none;}
+    /* common.css */
+     .hidden {width: 0; height: 0; overflow: hidden;}
+    /* design.css */
+
+   #wrap {width: 940px; height: 1130px; background-color: #000;}
+
+   #applebox {padding-top: 10px; box-sizing: border-box; width: 940px; height: 70px; background-color: #ccc;}
+     #apple_01 {float: left; margin-right: 122px; width: 90px; height: 48px; background-color: #aaa;}
+     #apple_02 {float: left; width: 600px; height: 30px; background-color: #bbb;}
+     #apple_03 {float: left; width: 128px; height: 30px; background-color: #aaa;}
+
+   #antbox {padding-top:70px; padding-bottom: 10px; box-sizing: border-box; width: 940px; height: 430px; background-color: #aaa;}
+     #ant_01 {margin: auto; margin-bottom: 109px; width: 305px; height: 126px; background-color: #ccc;}
+     #ant_02 { width: 940px; height: 100px; background-color: #bbb;}
+       #ant_02_01 {float: left; width: 156.666px; height: 100px; background-color: #ccc;}
+       #ant_02_02 {float: left; width: 156.666px; height: 100px; background-color: #bbb;}
+       #ant_02_03 {float: left; width: 156.666px; height: 100px; background-color: #ccc;}
+       #ant_02_04 {float: left; width: 156.666px; height: 100px; background-color: #bbb;}
+       #ant_02_05 {float: left; width: 156.666px; height: 100px; background-color: #ccc;}
+       #ant_02_06 {float: left; width: 156.666px; height: 100px; background-color: #bbb;}
+
+   #asbox {padding-top: 50px; padding-left: 23px; padding-right: 23px; box-sizing: border-box; width: 940px; height: 555px; background-color: #bbb;}
+     #as_00 {padding: 22px; box-sizing: border-box; width: 894px; height: 434px; background-color: #aaa;}
+       #ass_01 {float: left; width: 282px; height: 196px; background-color: #bbb;}
+         #ass_01_01 {width: 282px; height: 37px; background-color: #ddd}
+         #ass_01_02 {width: 282px; height: 159px; background-color: #ccc;}
+       #ass_02 {float: left; width: 282px; height: 196px; background-color: #ccc;}
+         #ass_02_01 {width: 282px; height: 37px; background-color: #bbb}
+         #ass_02_02 {width: 282px; height: 159px; background-color: #eee}
+       #ass_03 {float: left; width: 282px; height: 196px; background-color: #bbb;}
+         #ass_03_01 {width: 282px; height: 37px; background-color: #ddd}
+         #ass_03_02 {width: 282px; height: 159px; background-color: #ccc;}
+       #ass_04 {float: left; width: 282px; height: 196px; background-color: #ccc;}
+         #ass_04_01 {width: 282px; height: 37px; background-color: #bbb}
+         #ass_04_02 {width: 282px; height: 159px; background-color: #eee}
+       #ass_05 {float: left; width: 282px; height: 196px; background-color: #bbb;}
+         #ass_05_01 {width: 282px; height: 37px; background-color: #ddd}
+         #ass_05_02 {width: 282px; height: 159px; background-color: #ccc;}
+       #ass_06 {float: left; width: 282px; height: 196px; background-color: #ccc;}
+         #ass_06_01 {width: 282px; height: 37px; background-color: #bbb}
+         #ass_06_02 {width: 282px; height: 159px; background-color: #eee}
+
+   #footbox {padding-top: 21px; box-sizing: border-box; width: 940px; height: 75px; background-color: #aaa;}
+     #footbox_01 {float: left; width: 490px; height: 33px; background-color: #bbb;}
+       #footlogo {float: left; width: 84px; height: 33px; background-color: #666;}
+       #foottext {float: right; width: 398px; height: 33px; background-color: #ccc;}
+     #footbox_02 {float: right; width: 193px; height: 33px; background-color: #bbb;}
+       #footgo_01 {float: left; width: 109px; height: 33px; background-color: #eee;}
+       #footgo_02 {float: left; width: 41px; height: 33px; background-color: #666;}
+       #footgo_03 {float: right; width: 40px; height: 33px; background-color: #eee;}
+
+    
+	</style>
+</head>
+
+<body>
+  <div id="wrap">
+  <header id="applebox">
+  	<div id="apple_01"></div>
+  	<div id="apple_02"></div>
+  	<div id="apple_03"></div>
+  </header>
+
+  <div id="antbox">
+  	<div id="ant_01"></div>
+  	<div id="ant_02">
+      <div id="ant_02_01"></div>
+      <div id="ant_02_02"></div>
+      <div id="ant_02_03"></div>
+      <div id="ant_02_04"></div>
+      <div id="ant_02_05"></div>
+      <div id="ant_02_06"></div>
+     </div>
+  </div>
+
+  <div id="asbox">
+  	<div id="as_00">
+      <div id="ass_01">
+        <div id="ass_01_01"></div>
+        <div id="ass_01_02"></div>
+      </div>
+      <div id="ass_02">
+        <div id="ass_02_01"></div>
+        <div id="ass_02_02"></div>
+      </div>
+      <div id="ass_03">
+        <div id="ass_03_01"></div>
+        <div id="ass_03_02"></div>
+      </div>
+      <div id="ass_04">
+        <div id="ass_04_01"></div>
+        <div id="ass_04_02"></div>
+      </div>
+      <div id="ass_05">
+        <div id="ass_05_01"></div>
+        <div id="ass_05_02"></div>
+      </div>
+      <div id="ass_06">
+        <div id="ass_06_01"></div>
+        <div id="ass_06_02"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footbox">
+    <div id="footbox_01">
+      <div id="footlogo"></div>
+      <div id="foottext"></div>
+    </div>
+    <div id="footbox_02">
+      <div id="footgo_01"></div>
+      <div id="footgo_02"></div>
+      <div id="footgo_03"></div>
+    </div>
+  </footer>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* rwd_03.css */
+
+
+#wrap {width: auto; height: auto; background-color: #fff;}
+#headBox{padding-top: 10px; box-sizing: border-box; width: 100%; height: 60px; background-color: #333;}
+	.gnb{float: left; width: 126px; height: 30px; background-color: #fff;}
+	.unb{float: right; width: 89px;height: 38px; background-color: #333;}
+		.unb_01{float: left; width: 36px; height: 38px; background-color: #fff;}
+		.unb_02{float: right; width: 45px; height: 38px; background-color: #fff;}
+#adBox{width: 100%; height: 390px; background-color: #BBAA77;}
+
+#conBox{width: 100%; height: 210px; background-color: #547D77;}
+#conBox>ul{background-color: #547D77;}
+#conBox>ul>li{background-color: #fff;}
+
+#newsBox{width: 100%; height: 540px; background-color: #957DE9;}
+
+#footBox{padding-top: 16px; box-sizing: border-box; width: 100%; height: 120px; background-color: #333;}
+	#footBox>ul{margin: auto; height: 45px; background-color: #333;}
+	#footBox>ul>li{background-color: #fff;}
+
+	
+/* mobile -------------------------------------------- */
+@media screen and (max-width: 480px) {
+	#wrap{width: 100%;background-color: #2e3192; color: #fff;}
+	#headBox{padding-left: 11px; padding-right: 21px; box-sizing: border-box; }
+		.unb_01{display: none;}
+
+	#adBox{height: 660px;}
+	#adBox{padding-top: 149px; box-sizing: border-box; width: 100%; background-color: #BBAA77;}
+	#adBox>ul{margin: auto; width: 407px; height: 450px; background-color: #BBAA77;}
+	#adBox>ul>li{margin-bottom: 30px; width: 407px; height: 90px; background-color: #fff;}
+	#adBox>ul>li:last-child{margin: 0;}
+
+	#conBox{padding-top: 54px; box-sizing: border-box; height: 490px;}
+	#conBox>ul {width: 95%; height: 408px; margin: auto; background-color: #547D77;}
+	#conBox>ul>li{float: left; width: 49%; height: 49%;}
+	.con_01{margin-right: 2%;margin-bottom: 2%}
+	.con_02{margin-bottom: 2%}
+	.con_03{margin-right: 2%}
+
+
+	#newsBox{height: 640px; padding-top: 56px; box-sizing: border-box;}
+	#newsBox>ul{margin: auto; width: 95%; height: 557px; background-color: #957DE9;}
+	#newsBox>ul>li{margin-bottom: 2%; width: 100%; height: 19%; background-color: #fff;}
+
+
+	#footBox{height: 60px; padding-top: 12px; box-sizing: border-box;}
+	#footBox>ul{width: 340px; height: 35px; background-color: #fff;}
+
+
+	
+} /* mobile end */
+
+/* tablet -------------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 959px) {
+	#wrap{height: 500px; background-color: #fff;}
+	#headBox{padding-left: 15px; padding-right: 18px; box-sizing: border-box;}
+		.gnb{display: none;}
+		.unb{width: 94px;}
+	
+	#conBox{padding-top: 2.5%; box-sizing: border-box;}
+	#conBox>ul{margin: auto; width: 95%; height: 85%;}
+	#conBox>ul>li{float: left; margin-right: 6.6%; width: 20%; height: 100%; background-color: #fff;}
+    #conBox>ul>li:last-child{margin:0; }
+
+   	.news{width: 100%; height: 100%;}
+	.news_01{float: left; width: 50%; height: 100%; background-color: #957DE9;}
+	.news_02{float: left; width: 50%; height: 100%; background-color: #95ABE9;}
+
+	#footBox>ul{width: 95%; background-color: #333;}
+	.foot_01{float: left; width: 38%; height: 45px; background-color: #ddd;}
+	.foot_02{float: right; width: 58%; height: 45px; background-color: #ddd;}
+
+
+
+} /* tablet ------------------------------------------ */
+
+/* pc ------------------------------------------------ */
+@media screen and (min-width:960px) {
+	#wrap{background-color: #fff; color: #fff;}
+	#headBox{padding-top: 7px; padding-left: 140px; padding-right: 140px;}
+	#headBox>ul{padding-top: 5px; width: 430px; height: 30px; background-color: #333;}
+	#headBox>ul>li{float: left; width: 100px; height: 30px; margin-right: 10px; background-color: #fff;}
+	#headBox>ul>li:last-child{margin: 0;}
+
+	#conBox{margin: auto; width: 80%; padding-top: 2.5%; box-sizing: border-box;}
+	#conBox>ul{margin: auto; width: 95%; height: 85%;}
+	#conBox>ul>li{float: left; margin-right: 6.6%; width: 20%; height: 100%; background-color: #fff;}
+    #conBox>ul>li:last-child{margin:0; }
+
+	#newsBox{margin: auto; width: 80%;}
+	.news{width: 100%;height: 100%;}
+	.news_01{float: left; width: 33.34%; height: 100%; background-color: #957DE9;}
+	.news_02{float: left; width: 33.33%; height: 100%; background-color: #95ABE9;}
+	.news_03{float: left; width: 33.33%; height: 100%; background-color: #95D2E9}
+
+	#footBox>ul{width: 940px; background-color: #333;}
+	.foot_01{float: left; width: 230px; height: 45px; background-color: #fff;}
+	.foot_02{float: right; width: 700px; height: 45px; background-color: #fff;}
+
+
+
+	
+		
+
+} /*pc end */

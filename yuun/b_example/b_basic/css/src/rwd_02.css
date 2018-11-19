@@ -1,0 +1,84 @@
+/* rwd_01.css */
+
+#wrap {margin:auto; width: auto; max-width: 960px; max-width: 60rem; height: auto; min-height: 400px; min-height:25rem; transition: all 300ms linear;}
+
+#headBox{width: 100%; height: 150px; height: 9.376rem; background-color: #fa0;}
+h1{width: 100px; width: 6.25rem; height: 100%; background-color: #9f7; transition: all 500ms ease-in; float: left;}
+#gnb{width: 45px; width: 2.8125rem; height: 45px; height: 2.8125rem;background-color: #fff; float: right;}
+
+#infoBox{width: 100%; height: 300px; height: 18.75rem; background-color: #f9f;}
+
+#contentBox {width: 100%; height: 400px; height: 25rem; background-color: #acc;}
+#contentBox>ul{width: 100%; height: 100%;}
+#contentBox>ul>li{float: left; width: 25%; height: 100%;  border: 1px  solid #333; border: 0.0625rem  solid #333; box-sizing: border-box}
+
+/*.green {background-color: #5a4;} */
+/*.blue {background-color: #77f;} */
+#contentBox>ul>li:nth-child(2n){background-color: #5a4;}
+#contentBox>ul>li:nth-child(2n-1){background-color: #77f;}
+/* 2n 2번째마다 처리해라 
+2n+1 2번째 중에 1번째에 처리해라
++ 앞에서부터 -는 뒤에서부터 */
+
+/* :nth-child() 무조건 연속되어진 형태를 설정 가능하다
+<p class="par"></p>
+<p class="par"></p>
+<p class="par"></p>
+<p class="par"></p>
+
+.par:nth-child(1){}
+.par:nth-child(3){}
+.par:nth-child(5){}
+
+<p></p>
+<p></p>
+<div></div>
+<p></p>
+<div></div>
+동일한 태그 타입만 적용 가능(반복된 1,2,4번은 적용 가능)
+
+nth-of-type의 경우는 동일 레벨에서 동일한 타입(태그요소)만 선택
+
+p:nth-type
+p:first-of-type
+p:nth-type */
+
+
+
+#newsBox {width: 100%; height: 300px; height: 18.75rem; background-color: #f70;}
+.best_news{width: 100%;height: 100px; height: 6.25rem;background-color: #dd0;}
+.issue_news{width: 100%;height: 200px; height: 12.5rem;background-color: #f50;}
+
+#footBox {width: 100%; height: 100px; height: 6.25rem; background-color: #730;}
+#footBox>h2{width: 100px; width: 6.25rem;height: 100%;background-color: #acf;}
+
+/* mobile -------------------------------------------- */
+@media screen and (max-width: 480px) {
+	#wrap{ background-color: #ccc;}
+	#headBox {position: relative; height: 100px; height: 6.25rem;}
+	h1{width: 100%;}
+	#gnb{position: absolute; right: 20px; right: 1.25rem; top: 50%; margin-top: -1.40625rem;}
+
+	#infoBox{height: 400px;height: 25rem;}
+
+	#contentBox>ul>li{float: left; width: 50%; height: 50%; }
+	#contentBox>ul>li:nth-child(3){background-color: #afa;}
+	#contentBox>ul>li:nth-child(4){background-color: #aaf;}
+
+	#footBox>h2{width: 50%; margin: auto; float: none;}
+} /* mobile end */
+
+/* tablet -------------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#wrap{background-color: #c30;}
+	#infoBox{height: 300px; height: 18.75rem;}
+} /* tablet ------------------------------------------ */
+
+/* pc ------------------------------------------------ */
+@media screen and (min-width:769px) {
+	#wrap{background-color: #acf; }
+	#infoBox{height: 450px; height: 28.125rem;}
+	#conteteBox {height: 600px; height: 37.5rem;}
+	#newsBox {display: none;}
+
+} /*pc end */

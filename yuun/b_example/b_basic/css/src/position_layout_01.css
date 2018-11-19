@@ -1,0 +1,21 @@
+/* position_layout_01.css */
+
+#wrap{width: 960px; height: auto; min-height: 500px; background-color: #cca;}
+h1{width: 100%; height: auto; text-align: center; border-bottom: 1px solid #333;}
+
+/* position_01_01 ---------------------------*/
+#position_01{position: relative; width: 100%; height:500px; background-color: #faf;}
+
+.indicator {position: absolute; z-index: 500; bottom: 10px; left: 50%; margin-left:-150px;  width: 300px; height: 20px; background-color: #765;}
+
+.btn{position: absolute; z-index: 500; top: 50%; left: 0; margin-top: -50px; width: 100%; height: 0; background-color: #fff;}
+  /* float 기능을 사용하면 inline태그가 강제로 block으로 바뀜 */
+  .next_btn{float: right; width: 50px; height: 100px; background-color: #fa0;}
+  .pre_btn{float: left; width: 50px; height: 100px; background-color: #fa0;}
+
+.ad_banner{position: relative; width: 100%; height: 100%;}
+.ad_banner>div {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+  .ad_01{ background-color: #f1a; z-index: 30;} 
+  .ad_02{ background-color: #ffd; z-index: 20;}
+  .ad_03{ background-color: #63f; z-index: 10;}
+.ad_banner a{display: block; width: 100%; height: 100%; }  
