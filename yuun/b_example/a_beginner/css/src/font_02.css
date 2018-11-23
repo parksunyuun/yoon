@@ -1,10 +1,11 @@
-@charset "UTF-*";
+@charset "UTF-8";
 
 /* font_02.css */
 
 #wrap{padding: 0.5rem; margin: auto; width: 900px; height: auto; border: 1px solid #333;}
-h1{padding: 1rem; text-align: center; background-color: #aca;}
-h2{border: 1px solid #577; border-left: none; border-right: none; height: 70px; line-height: 70px; text-indent: 2rem;}
+h1{padding: 1rem; text-align: center; background-color: #aca; font-weight: 800;}
+h2{border: 1px solid #577; border-left: none; border-right: none; height: 70px; line-height: 70px; text-indent: 2rem;
+	font-family: NanumGothicExtraBold; font-weight: 800;}
 
 .line_height{width: 100%; height: auto; background-color: #fc0; line-height: 30px;}
 
@@ -34,5 +35,5 @@ p::-moz-selection{color:red;}
 p::-ms-selection{color:red;}
 p::-o-selection{color:red;}
 p::selection{color:red;}
-/* 벤더 프리픽스:최신 기능으로 브라우저에서 기능 자체는 지원하지만 공식으로 사용할 수 없는 테스트 버전일 경우에 강제로 테스트 버전을
+/* 벤더 프리픽스:최신 기능으로 브라우저에서 기능 자체는 지원하지만, 공식으로 사용할 수 없는 테스트 버전일 경우에 강제로 테스트 버전을
 사용할 수 있도록 처리하는 방법 */

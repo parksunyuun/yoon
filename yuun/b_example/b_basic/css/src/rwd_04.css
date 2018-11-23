@@ -19,7 +19,7 @@
 	#footBox>ul{margin: auto; height: 45px; background-color: #333;}
 	#footBox>ul>li{background-color: #fff;}
 
-	
+
 /* mobile -------------------------------------------- */
 @media screen and (max-width: 480px) {
 	#wrap{width: 100%;background-color: #2e3192; color: #fff;}
@@ -56,6 +56,7 @@
 @media screen and (min-width: 481px) and (max-width: 959px) {
 	#wrap{height: 500px; background-color: #fff;}
 	#headBox{padding-left: 15px; padding-right: 18px; box-sizing: border-box;}
+	#head{width: 80%; height: 100%; }
 		.gnb{display: none;}
 		.unb{width: 94px;}
 	
@@ -79,6 +80,7 @@
 /* pc ------------------------------------------------ */
 @media screen and (min-width:960px) {
 	#wrap{background-color: #fff; color: #fff;}
+	#head {margin: 	auto; height: 100%;	max-width: 960px;}
 	#headBox{padding-top: 7px; padding-left: 140px; padding-right: 140px;}
 	#headBox>ul{padding-top: 5px; width: 430px; height: 30px; background-color: #333;}
 	#headBox>ul>li{float: left; width: 100px; height: 30px; margin-right: 10px; background-color: #fff;}
@@ -95,7 +97,8 @@
 	.news_02{float: left; width: 33.33%; height: 100%; background-color: #95ABE9;}
 	.news_03{float: left; width: 33.33%; height: 100%; background-color: #95D2E9}
 
-	#footBox>ul{width: 940px; background-color: #333;}
+	#footBox>ul{width: 930px; background-color: #333;}
+	#fot{max-width: 960px; height: 100%;  margin: auto;}
 	.foot_01{float: left; width: 230px; height: 45px; background-color: #fff;}
 	.foot_02{float: right; width: 700px; height: 45px; background-color: #fff;}
 
